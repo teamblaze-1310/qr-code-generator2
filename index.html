@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code PDF Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code PDF Generator</h1>
+        <form id="qrForm">
+            <label for="user_input">Enter Information:</label>
+            <input type="text" id="user_input" name="user_input" placeholder="Enter text" required>
+            <br><br>
+            <button type="submit">Generate PDF</button>
+        </form>
+        <canvas id="qrCanvas" hidden></canvas>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
